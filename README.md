@@ -1,12 +1,14 @@
-# Template Puppet Module for Boxen
+# SABnzbd Puppet Module for Boxen
 
 [![Build Status](https://travis-ci.org/dieterdemeyer/puppet-sabnzbd.png?branch=master)](https://travis-ci.org/dieterdemeyer/puppet-sabnzbd)
 
 ## Usage
 
 ```puppet
-boxen::example { 'best example ever':
-  salutation => 'fam'
+include sabnzbd
+
+class { 'sabnzbd':
+  version => '0.7.16'
 }
 ```
 
